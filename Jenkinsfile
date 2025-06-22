@@ -40,5 +40,14 @@ pipeline {
 		}
 	}
 
+	stage ('Publish') {
+		steps {
+			echo 'public 2 runnig folder'
+		//iisreset /stop // stop iis de ghi de file 
+			bat 'xcopy "%WORKSPACE%\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"'
+ 		}
+	}
+
+	
   } // end stages
 }//end pipeline
