@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jenkinsCICD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6d15d206b1e8cfe7daa5776dc99b394cf63f1f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("jenkinsCICD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jenkinsCICD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
