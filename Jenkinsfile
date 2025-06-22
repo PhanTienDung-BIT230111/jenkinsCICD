@@ -41,12 +41,16 @@ pipeline {
 	}
 
 	stage ('Publish') {
-		steps {
-			echo 'public 2 runnig folder'
-		//iisreset /stop // stop iis de ghi de file 
-			bat 'xcopy "%WORKSPACE%\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"'
- 		}
-	}
+    steps {
+        echo 'Stop IIS, then copy to deploy folder'
+        bat '''
+            iisreset /stop
+            xcopy "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsCICD\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"
+            iisreset /start
+        '''
+    }
+}
+
 
 	stage('Deploy to IIS') {
             steps {
