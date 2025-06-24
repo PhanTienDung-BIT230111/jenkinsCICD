@@ -43,11 +43,13 @@ pipeline {
 	stage ('Publish') {
     steps {
         echo 'Stop IIS, then copy to deploy folder'
-        bat '''
-            iisreset /stop
-            xcopy "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsCICD\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"
-            iisreset /start
-        '''
+        bat '
+            iisreset /stop'
+			
+			bat  'xcopy "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsCICD\\publish" /E /Y /I /R "c:\\wwwroot\\myproject"'
+            
+			bat 'iisreset /start'
+        
     }
 }
 
