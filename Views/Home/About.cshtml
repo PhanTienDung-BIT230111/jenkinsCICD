@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Giới thiệu";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="text-center mb-5">
+            <h1><i class="fas fa-info-circle text-primary"></i> Giới thiệu</h1>
+            <p class="lead">Ứng dụng Quản lý Tài chính Cá nhân & Nhóm mua chung</p>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h4><i class="fas fa-target"></i> Mục tiêu của ứng dụng</h4>
+            </div>
+            <div class="card-body">
+                <p>
+                    Ứng dụng được phát triển nhằm giúp người dùng quản lý tài chính cá nhân và theo dõi chi phí trong các nhóm mua chung một cách dễ dàng, minh bạch và hiệu quả.
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h4><i class="fas fa-list-check"></i> Tính năng chính</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-user text-info"></i> Quản lý cá nhân</h5>
+                        <ul>
+                            <li>Theo dõi chi tiêu hàng ngày</li>
+                            <li>Phân loại chi tiêu theo danh mục</li>
+                            <li>Xem báo cáo tài chính</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-users text-warning"></i> Quản lý nhóm</h5>
+                        <ul>
+                            <li>Tạo và quản lý nhóm mua chung</li>
+                            <li>Chia sẻ chi phí công bằng</li>
+                            <li>Theo dõi công nợ trong nhóm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h4><i class="fas fa-laptop-code"></i> Công nghệ sử dụng</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Backend:</h6>
+                        <ul>
+                            <li>ASP.NET Core 8.0</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Frontend:</h6>
+                        <ul>
+                            <li>Bootstrap 5</li>
+                            <li>Font Awesome Icons</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                <h4><i class="fas fa-rocket"></i> Bắt đầu sử dụng</h4>
+            </div>
+            <div class="card-body">
+                <p>Để bắt đầu sử dụng ứng dụng:</p>
+                <ol>
+                    <li>Tạo tài khoản người dùng</li>
+                    <li>Thêm các khoản chi tiêu cá nhân</li>
+                    <li>Tạo nhóm mua chung và mời thành viên tham gia</li>
+                    <li>Chia sẻ chi phí và theo dõi công nợ</li>
+                </ol>
+                
+                <div class="text-center mt-4">
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg">
+                        <i class="fas fa-home"></i> Về trang chủ
+                    </a>
+                    <a href="@Url.Action("Create", "User")" class="btn btn-success btn-lg ms-2">
+                        <i class="fas fa-user-plus"></i> Tạo tài khoản
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
